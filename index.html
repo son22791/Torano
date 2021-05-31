@@ -1,0 +1,1363 @@
+<DOCTYPE html>
+    <html lang="en">
+       <head>
+       <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="VTC Academy, Web Programming">
+        <meta name="keywords" content=" fashion, shop">
+        <meta name="author" content="VTC Academy">
+        <title>Torano</title>
+        <!-- Bootstrap core CSS -->
+    <link href="http://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/0b0f61d42e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v9.0"
+        nonce="2Ovm8rVE"></script>
+    <!-- Custom styles for your website -->
+    <!-- <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="assets/css/registration.css"> -->
+
+    <!--[if IE 6]>
+<script> src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"</script>
+    <![endif]-->
+      </head>
+      <body>
+        <div id="topheader" class="hidden-xs">
+            <div class="container ">
+                <div class="row">
+                    <div class="col no-padding col-xl-6">
+                        <ul><li>
+                            <a href="0931733469">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <a class="font-weight-bold" href="0931733469">0931733469</a>
+                        </li></ul>
+                    </div>
+                    <div class="col no-padding col-xl-6 topbar-right">
+                        <ul>
+                            <li>
+                                <a href="index.php?controller=users&action=loginUser">
+                                    <i class="icon_top fas fa-user"></i>
+                                </a>
+                                <a href="index.php?controller=users&action=loginUser">Tài khoản</a>
+                            </li>
+                            <!-- <a>
+                                                        <i class="icon_top fas fa-user"></i>
+                                                    </a> -->
+                            <!-- <a href="index.php?controller=users&action=loginUser">Tài khoản</a>
+                                                    <form class="form-logout" action="" method="post">
+                                                                <i class="fas logout_icon fa-sign-out-alt"></i>
+                                                                <button type="submit" value="true" name="logout" class="logout">
+                                                                    Đăng xuất
+                                                                </button>
+                                                    </form> -->
+                        </ul>
+                        <ul>
+                            <li>
+                                <button class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                    aria-controls="offcanvasRight"> <a href="#">
+                                        <i class=" icon_top fas fa-shopping-bag"></i>
+                                    </a>
+                                    <a href="#">Giỏ hàng</a>
+                                    <a class="count-product" href="#">(2)</a></button>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 id="offcanvasRightLabel">Giỏ hàng</h5>
+                                        <span class="textCartSide">Bạn đang có <b>2</b> sản phẩm trong giỏ hàng.</span>
+                                        <button type="button" class="btn-close btn_close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="cart-view ">
+                                            <table id="cart-view">
+                                                <tr class="item_2">
+                                                    <td class="img">
+                                                        <a href="">
+                                                            <img class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" src="images/416w.jpg"
+                                                                 data-src="" alt="Áo thun in hình Town TS416 - Đen - L" sizes="100px">
+                                                        </a>
+                                                      </td>
+                                                     <td>
+                                                          <a class="pro-title-view" href="">Áo thun in hình Town TS416 - Đen - L</a><span
+                                                             class="pro-price-view">
+                                                            270,000 ₫ <i>x1</i></span><span class="pro-quantity-view">1</span>
+                                                        <span class="remove_link remove-cart removePro">
+                                                             <a href="javascript:void(0);" class="cart_remove" data-id="30681893">Xóa</a>
+                                                          </span>
+                                                     </td>
+                                                  </tr>
+                                                 <tr class="item_2">
+                                                    <td class="img">
+                                                        <a href="">
+                                                            <img class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto" src="images/187407016_2247551268712536_4041232844239158930_n.jpg"
+                                                                 data-src="" alt="Áo polo coolmax Germany TP065 - Phối Cầu vồng - Trắng - M" sizes="100px">
+                                                        </a>
+                                                     </td>
+                                                     <td>
+                                                        <a class="pro-title-view" href="">Áo polo coolmax Germany TP065 - Phối Cầu vồng - Trắng - M</a><span
+                                                             class="pro-price-view">
+                                                            380,000 ₫ <i>x1</i></span><span class="pro-quantity-view">1</span>
+                                                        <span class="remove_link remove-cart removePro">
+                                                            <a href="javascript:void(0);" class="cart_remove" data-id="30840145">Xóa</a>
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <span class="line"></span>
+                                            <table class="table-total">
+                                                <tr>
+                                                    <td class="text-left"><b>TỔNG TIỀN TẠM TÍNH:</b></td>
+                                                    <td class="text-right" id="total-view-cart">650,000₫</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="no-padding-left-right" colspan="2"><a href="/cart/checkout" class="checkLimitCart linktocheckout button dark">Tiến hành đặt
+                                                             hàng</a></td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td colspan="2">
+                                                        <a href="/cart" class="linktocart button dark">Xem chi tiết giỏ hàng <i
+                                                                 class="fa fa-arrow-right"></i></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <div id="navbar">
+            <div class="container navbar-light navbar-sticky">
+                <div class="row">
+                    <div id="navbar_left_mobile" class="col no-padding col-6">
+                        <button data-trigger="navbar_main" class="navbar-toggler collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <span class="screen-darken"></span>
+                        <a class="logo_nav" href="#">
+                            <img height="35" src="images/store_1607570776_234.png" alt="" class="img-responsive">
+                        </a>
+                    </div>
+                    <div id="navbar_left" class="col no-padding col-xl-2 col-lg-2">
+                        <a class="logo_nav" href="#">
+                            <img src="images/store_1607570776_234.png" alt="" class="img-responsive">
+                        </a>
+                    </div>
+                    <nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg navbar-light col no-padding col-xl-8-5 col-lg-8-5">
+                     <div class="container no-padding justify-content-center">
+                        <div class="offcanvas-header">
+                            <a class="menu_mobile_title">MENU</a>
+                        </div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">COLLECTION</a>
+                                <ul class="dropdown-menu fade-down">
+                                  <li><a class="dropdown-item" href="#">CHOSEN BY KIM LY</a></li>
+                                  <li><a class="dropdown-item" href="#">WINTER WIND</a></li>
+                                  <li><a class="dropdown-item" href="#">LÊ BẢO BÌNH PICKS</a></li>
+                                  <li><a class="dropdown-item" href="#">SWACKET x DINH TRONG & ANH QUAN</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">ÁO POLO</a>
+                                <ul class="dropdown-menu fade-down">
+                                  <li><a class="dropdown-item" href="#">ÁO POLO TRƠN</a></li>
+                                  <li><a class="dropdown-item" href="#">ÁO POLO HỌA TIẾT</a></li>
+                                  <li><a class="dropdown-item" href="#">ÁO POLO BO KẺ</a></li>
+                                  <li><a class="dropdown-item" href="#">ÁO POLO KẺ</a></li>
+                                  <li><a class="dropdown-item" href="#">ÁO POLO MELANGE</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">ÁO THUN</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">QUẦN SHORT</a>
+                                <ul class="dropdown-menu fade-down">
+                                  <li><a class="dropdown-item" href="#">SHORT KAKI</a></li>
+                                  <li><a class="dropdown-item" href="#">SHORT ĐŨI</a></li>
+                                  <li><a class="dropdown-item" href="#">SHORT GIÓ</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">SƠ MI DÀI TAY</a>
+                                <ul class="dropdown-menu fade-down">
+                                  <li><a class="dropdown-item" href="#">SƠ MI DÀI TAY DẠ</a></li>
+                                  <li><a class="dropdown-item" href="#">SƠ MI DÀI TAY HỌA TIẾT</a></li>
+                                  <li><a class="dropdown-item" href="#">SƠ MI DÀI TAY KẺ</a></li>
+                                  <li><a class="dropdown-item" href="#">SƠ MI DÀI TAY TRƠN</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">SƠ MI NGẮN TAY</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">QUẦN DÀI</a>
+                                <ul class="dropdown-menu fade-down">
+                                  <li><a class="dropdown-item" href="#">QUẦN ÂU</a></li>
+                                  <li><a class="dropdown-item" href="#">QUẦN KAKI</a></li>
+                                  <li><a class="dropdown-item" href="#">QUẦN JEANS</a></li>
+                                  <li><a class="dropdown-item" href="#">QUẦN GIÓ</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">SẢN PHẨM</a>
+                                <ul class="dropdown-menu fade-down sub_menu">
+                                    <li><a class="dropdown-item desktop-hidden" href="/hang-nam-pc155028.html">Hàng nam</a>
+                                    </li>
+                                    <div class="row megaMenu">
+                                            <div class="list-menu col-xl-4 col-lg-4">
+                                                <li>
+                                                    <a href="/hang-nam-pc155028.html" class="tp_menu_item">Hàng nam</a>
+                                                    <ul class="submenu dropdown-menu fade-left">
+                                                        <li><a class="dropdown-item" href="#">Hàng Đông</a>
+                                                            <ul class="submenu dropdown-menu fade-left">
+                                                                <li><a class="dropdown-item" href="#">Áo khoác 2 lớp</a></li>
+                                                                <li><a class="dropdown-item" href="#">Bộ thể thao</a></li>
+                                                                <li><a class="dropdown-item" href="#">Giữ nhiệt</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="#">Hàng Hè</a>
+                                                            <ul class="submenu dropdown-menu fade-left">
+                                                                <li><a class="dropdown-item" href="#">Sơ mi ngắn tay</a></li>
+                                                                <li><a class="dropdown-item" href="#">Short</a></li>
+                                                                <li><a class="dropdown-item" href="#">Áo Polo</a></li>
+                                                                <li><a class="dropdown-item" href="#">Áo T shirt</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a class="dropdown-item" href="#">Hàng all</a>
+                                                            <ul class="submenu dropdown-menu fade-left">
+                                                                <li><a class="dropdown-item" href="#">Sơ mi dài tay</a></li>
+                                                                <li><a class="dropdown-item" href="#">Quần Âu</a></li>
+                                                                <li><a class="dropdown-item" href="#">Quần Đũi</a></li>
+                                                                <li><a class="dropdown-item" href="#">Quần Jeans</a></li>
+                                                                <li><a class="dropdown-item" href="#">Quần kaki</a></li>
+                                                                <li><a class="dropdown-item" href="#">Quần gió</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </div>
+                                            <div class="col-xl-8 col-lg-8">
+                                                <div class="row">
+                                                    <div class="col-xl-4 col-lg-4">
+                                                        <div class="itemImgMega">
+                                                            <div class="boxImgMega">
+                                                                <a href="">
+                                                                    <img class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto"
+                                                                        src="images/tp065.jpg"
+                                                                        data-src=""
+                                                                        alt="" sizes="60px">
+                                                                </a>
+                                                            </div>
+                                                            <div class="boxNameMega">
+                                                                <a href="">Áo polo coolmax Germany TP065</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-4">
+                                                        <div class="itemImgMega">
+                                                            <div class="boxImgMega">
+                                                                <a href="">
+                                                                    <img class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto"
+                                                                        src="images/ts417.jpg"
+                                                                        data-src=""
+                                                                        alt="" sizes="60px">
+                                                                </a>
+                                                            </div>
+                                                            <div class="boxNameMega">
+                                                                <a href="">Áo thun in hình New York City
+                                                                    TS417</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-4">
+                                                        <div class="itemImgMega">
+                                                            <div class="boxImgMega">
+                                                                <a href="">
+                                                                    <img class="lazyautosizes ls-is-cached lazyloaded" data-sizes="auto"
+                                                                        src="images/cl8a5057_copy.jpg"
+                                                                        data-src=""
+                                                                        alt="" sizes="60px">
+                                                                </a>
+                                                            </div>
+                                                            <div class="boxNameMega">
+                                                                <a href="">Áo polo trơn thêu logo
+                                                                    trước ngực TP300</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">PHỤ KIỆN</a>
+                                <ul class="dropdown-menu fade-down">
+                                  <li><a class="dropdown-item" href="#">Boxer</a></li>
+                                  <li><a class="dropdown-item" href="#">Thắt lưng</a></li>
+                                  <li><a class="dropdown-item" href="#">Quần lót</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="col phone_mobile no-padding col-xl-6">
+                            <ul><li>
+                                <a href="0931733469">
+                                    <i class="fas fa-phone" aria-hidden="true"></i>
+                                </a>
+                                <a class="font-weight-bold" href="0931733469">0931733469</a>
+                            </li></ul>
+                        </div>
+                         </div> <!-- container-fluid.// -->
+                    </nav>
+                    <div id="navbar_right"  class="col no-padding col-xl-1-5 col-lg-1-5">
+                        <div class="searchFormHeader" >
+                            <table class="elementsContainer">
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="Tìm kiếm..." class="search">
+                                    </td>
+                                    <td>
+                                        <a class="fa_search" href="#">
+                                            <i class="fas fa-search"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="navbar_right_mobile"  class="col no-padding col-6">
+                        <div class="navbar_right_mobile">
+                            <button data-trigger="search_mobile" class="navbar-toggler collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                                <a class="fa_search" href="#">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                            </button>
+                            <button data-trigger="navbar_main" class="navbar-toggler collapsed navbar-right-hidden " type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <a href="#">
+                                <i class=" icon_top fas fa-shopping-bag" aria-hidden="true"><span class="badge bg-danger rounded-pill">1</span></i>
+                            </a>
+                            <a href="index.php?controller=users&amp;action=loginUser">
+                                <i class="icon_top fas fa-user" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" mobile-offcanvas-search mobile-offcanvas" id="search_mobile">
+                        <div class="mobile-search-last">
+                            <button class="btn-close float-end"></button>
+                            <form action="">
+                                <table class="mobile-search-container">
+                                    <p class="title">TÌM KIẾM</p>
+                                    <tr>
+                                        <td>
+                                            <input type="text" placeholder="Tìm kiếm..." class="search-offcanvas">
+                                        </td>
+                                        <td>
+                                            <button type="submit">
+                                                <a class="fa_search" href="#">
+                                                    <i class="fas fa-search"></i>
+                                                </a>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar End-->
+          <!-- Page Content -->
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/e2377bce-d3b2-4daa-8fba-59eee7ee93c8.png" class="d-block w-100" alt="slide1">
+              </div>
+              <div class="carousel-item">
+                <img src="images/58d0d1a0-be29-48e6-9fb3-16360767f467.png" class="d-block w-100" alt="slide2">
+              </div>
+              <div class="carousel-item">
+                <img src="images/ddfde991-635d-4617-bb5c-2dc5677a9002.png" class="d-block w-100" alt="slide3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="previous"><i class="fas fa-chevron-left"></i></span>
+                <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="next"><i class="fas fa-chevron-right"></i></span>
+                <span class="sr-only">Next</span>
+            </button>
+          </div>
+        <!-- Call to Action  -->
+        <div id="" class=" section section-collection product_new  ">
+            <div class="container product_new_flex">
+                    <div class="product-lists-home row">
+                        <div class="sectionTitleTab">
+                            <h2>
+                                <a href="#" class="tp_title">
+                                    Sản phẩm mới
+                                </a></h2>
+                        </div>
+                        <div class="product-resize  col-lg-3 col-md-3 col-6 ">
+                            <div class="product__resize">
+                                <div class="product-block">
+                                    <div class="product-img ">
+                                        <a href="#" class="p-img-box">
+    
+                                            <img class="product_img" src="images/d681d384-55ae-495e-924b-1a5702f2ff45.png"
+                                                alt="">
+    
+                                        </a></div>
+                                    <div class="product-detail ">
+                                        <div class="box-pro-detail">
+                                            <div class="pro-name">
+                                                <a href="#" class="tp_product_name">
+                                                    Áo khoác gió Basic Hood CW002
+                                                </a></div>
+                                            <div class="box-pro-prices">
+                                                <p class="pro-price tp_product_price highlight">
+                                                    490,000₫
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actionLoop visible-lg">
+                                    <a class="quickView notClick separated_product" href="#"><i
+                                            class="fa fa-shopping-cart"></i>
+                                        <p>Mua nhanh</p>
+                                    </a>
+                                    <a class="styleBtnBuy" href="#"><i class="fa fa-eye"></i>
+                                        <p>Xem chi tiết</p>
+    
+                                    </a></div>
+                            </div>
+                        </div>
+                        <div class="product-resize  col-lg-3 col-md-3 col-6 ">
+                            <div class="product__resize">
+                                <div class="product-block">
+                                    <div class="product-img ">
+                                        <a href="#" class="p-img-box">
+    
+                                            <img class="product_img" src="images/ed4015e0-f133-49d1-ab8e-8cf51c38ce2b.png"
+                                                alt="">
+    
+                                        </a></div>
+                                    <div class="product-detail ">
+                                        <div class="box-pro-detail">
+                                            <div class="pro-name">
+                                                <a href="#" class="tp_product_name">
+                                                    Áo khoác Bomber gió bổ sườn Pazzini
+                                                </a></div>
+                                            <div class="box-pro-prices">
+                                                <p class="pro-price tp_product_price highlight">
+                                                    450,000₫
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actionLoop visible-lg">
+                                    <a class="quickView notClick separated_product" href="#"><i
+                                            class="fa fa-shopping-cart"></i>
+                                        <p>Mua nhanh</p>
+                                    </a>
+                                    <a class="styleBtnBuy" href="#"><i class="fa fa-eye"></i>
+                                        <p>Xem chi tiết</p>
+    
+                                    </a></div>
+                            </div>
+                        </div>
+                        <div class="product-resize  col-lg-3 col-md-3 col-6 ">
+                            <div class="product__resize">
+                                <div class="product-block">
+                                    <div class="product-img ">
+                                        <a href="#" class="p-img-box added">
+    
+                                            <img class="product_img" src="images/a96db30a-a398-4842-93ed-bfa1c894e658.png"
+                                                alt="">
+    
+                                        </a></div>
+                                    <div class="product-detail ">
+                                        <div class="box-pro-detail">
+                                            <div class="pro-name">
+                                                <a href="#" class="tp_product_name" h>
+                                                    Áo khoác gió Bomber thêu logo tay CW001
+                                                </a></div>
+                                            <div class="box-pro-prices">
+                                                <p class="pro-price tp_product_price highlight">
+                                                    450,000₫
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actionLoop visible-lg">
+                                    <a class="quickView notClick separated_product" href="#">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        <p>Mua nhanh</p>
+                                    </a>
+                                    <a class="styleBtnBuy" href="/ao-khoac-gio-bomber-theu-logo-tay-cw001-p24606842.html">
+                                        <i class="fa fa-eye"></i>
+                                        <p>Xem chi tiết</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-resize  col-lg-3 col-md-3 col-6 ">
+                            <div class="product__resize">
+                                <div class="product-block">
+                                    <div class="product-img ">
+                                        <a href="#" class="p-img-box">
+    
+                                            <img class="product_img" src="images/968bd7ea-2dea-4997-a1b3-ac6058a68493.png"
+                                                alt="">
+    
+                                        </a></div>
+                                    <div class="product-detail ">
+                                        <div class="box-pro-detail">
+                                            <div class="pro-name">
+                                                <a href="#" class="tp_product_name">
+                                                    Áo phông dài tay Henley viền cong Pazzini
+                                                </a></div>
+                                            <div class="box-pro-prices">
+                                                <p class="pro-price tp_product_price highlight">
+                                                    220,000₫
+    
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actionLoop visible-lg">
+                                    <a class="quickView notClick separated_product" href="#"><i
+                                            class="fa fa-shopping-cart"></i>
+                                        <p>Mua nhanh</p>
+    
+                                    </a>
+                                    <a class="styleBtnBuy" href="#"><i class="fa fa-eye"></i>
+                                        <p>Xem chi tiết</p>
+                                    </a></div>
+                            </div>
+                        </div>
+                        <div class="product-resize  col-lg-3 col-md-3 col-6 ">
+                            <div class="product__resize">
+                                <div class="product-block">
+                                    <div class="product-img ">
+                                        <a href="#" class="p-img-box">
+    
+                                            <img class="product_img" src="images/13a9f1cf-7b42-4f16-a55f-181a5c397f6b.png"
+                                                alt="#">
+    
+                                        </a></div>
+                                    <div class="product-detail ">
+                                        <div class="box-pro-detail">
+                                            <div class="pro-name">
+                                                <a href="#" class="tp_product_name">
+                                                    Quần âu Pazzini L03 Slim fit
+                                                </a></div>
+                                            <div class="box-pro-prices">
+                                                <p class="pro-price tp_product_price highlight">
+                                                    420,000₫
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actionLoop visible-lg">
+                                    <a class="quickView notClick separated_product" href="#"><i
+                                            class="fa fa-shopping-cart"></i>
+                                        <p>Mua nhanh</p>
+                                    </a>
+                                    <a class="styleBtnBuy" href="/quan-au-pazzini-l03-slim-fit-p12808746.html"><i
+                                            class="fa fa-eye"></i>
+                                        <p>Xem chi tiết</p>
+                                    </a></div>
+                            </div>
+                        </div>
+                        <div class="product-resize  col-lg-3 col-md-3 col-6 ">
+                            <div class="product__resize">
+                                <div class="product-block">
+                                    <div class="product-img ">
+                                        <a href="#" class="p-img-box added">
+    
+                                            <img class="product_img" src="images/4839ec76-4a06-4842-a735-795d544448bf.png"
+                                                alt="">
+    
+                                        </a></div>
+                                    <div class="product-detail ">
+                                        <div class="box-pro-detail">
+                                            <div class="pro-name">
+                                                <a href="/ao-khoac-gio-co-mu-in-ngang-nguc-p24622902.html"
+                                                    class="tp_product_name">
+                                                    Áo khoác gió có mũ in ngang ngực
+                                                </a></div>
+                                            <div class="box-pro-prices">
+                                                <p class="pro-price tp_product_price highlight">
+                                                    490,000₫
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actionLoop visible-lg">
+                                    <a class="quickView notClick separated_product" href="#"><i
+                                            class="fa fa-shopping-cart"></i>
+                                        <p>Mua nhanh</p>
+                                    </a>
+                                    <a class="styleBtnBuy" href="/ao-khoac-gio-co-mu-in-ngang-nguc-p24622902.html"><i
+                                            class="fa fa-eye"></i>
+                                        <p>Xem chi tiết</p>
+                                    </a></div>
+                            </div>
+                        </div>
+                        <div class="product-resize  col-lg-3 col-md-3 col-6 ">
+                            <div class="product__resize">
+                                <div class="product-block">
+                                    <div class="product-img ">
+                                        <a href="/quan-kaki-dai-basic-pazzini-kk27-p17412777.html" class="p-img-box">
+    
+                                            <img class="product_img" src="images/1d9bd447-6f5e-422c-8dcf-522daf303762.png"
+                                                alt="">
+    
+                                        </a></div>
+                                    <div class="product-detail ">
+                                        <div class="box-pro-detail">
+                                            <div class="pro-name">
+                                                <a href="/quan-kaki-dai-basic-pazzini-kk27-p17412777.html"
+                                                    class="tp_product_name">
+                                                    Quần kaki dài Basic Pazzini KK27
+                                                </a></div>
+                                            <div class="box-pro-prices">
+                                                <p class="pro-price tp_product_price highlight">
+                                                    380,000₫
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actionLoop visible-lg">
+                                    <a class="quickView notClick separated_product" href="#"><i
+                                            class="fa fa-shopping-cart"></i>
+                                        <p>Mua nhanh</p>
+                                    </a>
+                                    <a class="styleBtnBuy" href="/quan-kaki-dai-basic-pazzini-kk27-p17412777.html"><i
+                                            class="fa fa-eye"></i>
+                                        <p>Xem chi tiết</p>
+                                    </a></div>
+                            </div>
+                        </div>
+                        <div class="product-resize  col-lg-3 col-md-3 col-6 ">
+                            <div class="product__resize">
+                                <div class="product-block" data-anmation="1">
+                                    <div class="product-img ">
+                                        <a href="/ao-len-tron-co-tron-theu-logo-p24822803.html" class="p-img-box">
+                                            <img class="product_img" src="images/cadc0046-a51f-4e8e-b917-7e978b359782.png"
+                                                alt="">
+                                        </a></div>
+                                    <div class="product-detail ">
+                                        <div class="box-pro-detail">
+                                            <div class="pro-name">
+                                                <a href="/ao-len-tron-co-tron-theu-logo-p24822803.html"
+                                                    class="tp_product_name">
+                                                    Áo len trơn cổ tròn thêu logo
+                                                </a></div>
+                                            <div class="box-pro-prices">
+                                                <p class="pro-price tp_product_price highlight">
+                                                    390,000₫
+    
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actionLoop visible-lg">
+                                    <a class="quickView notClick separated_product" href="#"><i
+                                            class="fa fa-shopping-cart"></i>
+                                        <p>Mua nhanh</p>
+    
+                                    </a>
+                                    <a class="styleBtnBuy" href="/ao-len-tron-co-tron-theu-logo-p24822803.html"><i
+                                            class="fa fa-eye"></i>
+                                        <p>Xem chi tiết</p>
+    
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        <div id="" class=" section section-collection product_new">
+                <div class=" container product_new_flex">
+                    <div class="product-lists-home row">
+                        <div class="sectionTitleTab ">
+                            <h2>
+                                <a href="#" class="tp_title">
+                                    Sản phẩm bán chạy
+                                </a></h2>
+                        </div>
+                        <div class="product-resize  col-lg-3 col-md-3 col-6 ">
+                            <div class="product__resize">
+                                <div class="product-block">
+                                    <div class="product-img ">
+                                        <a href=# class="p-img-box added">
+                                            <img class="product_img" src="images/fd681eb5-5904-4d0a-b432-b0cec6feb004.png">
+                                        </a>
+                                    </div>
+                                    <div class="product-detail ">
+                                        <div class="box-pro-detail">
+                                            <div class="pro-name">
+                                                <a href="#" class="tp_product_name">
+                                                    Áo khoác da lộn phối ngực Pazzini
+                                                </a>
+                                            </div>
+                                            <div class="box-pro-prices">
+                                                <p class="pro-price tp_product_price highlight">
+                                                    590,000₫
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actionLoop visible-lg">
+                                    <a class="quickView notClick separated_product" href="#">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        <p>Mua nhanh</p>
+                                    </a>
+                                    <a class="styleBtnBuy" href="#"><i class="fa fa-eye"></i>
+                                        <p></p>
+                                        <p>Xem chi tiết</p>
+                                    </a>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="product-resize  col-lg-3 col-md-3 col-6 ">
+                            <div class="product__resize">
+                                <div class="product-block">
+                                    <div class="product-img ">
+                                        <a href="#" class="p-img-box">
+    
+                                            <img class="product_img" src="images/fa109356-0c3f-4d94-a382-60f5df83c100.png"
+                                                alt="">
+    
+                                        </a></div>
+                                    <div class="product-detail ">
+                                        <div class="box-pro-detail">
+                                            <div class="pro-name">
+                                                <a href="#" class="tp_product_name">
+                                                    Áo len cổ tròn thêu họa tiết Crane Bird Pazzini
+                                                </a></div>
+                                            <div class="box-pro-prices">
+                                                <p class="pro-price tp_product_price highlight">
+                                                    420,000₫
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actionLoop visible-lg">
+                                    <a class="quickView notClick separated_product" href="#"><i
+                                            class="fa fa-shopping-cart"></i>
+                                        <p>Mua nhanh</p>
+                                    </a>
+                                    <a class="styleBtnBuy" href="#"><i class="fa fa-eye"></i>
+                                        <p>Xem chi tiết</p>
+    
+                                    </a></div>
+                            </div>
+                        </div>
+                        <div class="product-resize  col-lg-3 col-md-3 col-6 ">
+                            <div class="product__resize">
+                                <div class="product-block">
+                                    <div class="product-img ">
+                                        <a href="#" class="p-img-box added">
+    
+                                            <img class="product_img" src="images/e70239e3-3ab5-4d31-91a8-2ffac96f3f4f.png"
+                                                alt="">
+    
+                                        </a></div>
+                                    <div class="product-detail ">
+                                        <div class="box-pro-detail">
+                                            <div class="pro-name">
+                                                <a href="#" class="tp_product_name" h>
+                                                    Áo khoác gió có mũ in logo
+                                                </a></div>
+                                            <div class="box-pro-prices">
+                                                <p class="pro-price tp_product_price highlight">
+                                                    490,000₫
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actionLoop visible-lg">
+                                    <a class="quickView notClick separated_product" href="#">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        <p>Mua nhanh</p>
+                                    </a>
+                                    <a class="styleBtnBuy" href="/ao-khoac-gio-bomber-theu-logo-tay-cw001-p24606842.html">
+                                        <i class="fa fa-eye"></i>
+                                        <p>Xem chi tiết</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-resize  col-lg-3 col-md-3 col-6 ">
+                            <div class="product__resize">
+                                <div class="product-block">
+                                    <div class="product-img ">
+                                        <a href="#" class="p-img-box">
+    
+                                            <img class="product_img" src="images/514b9ea1-d9d4-436a-b7a0-aea5d7fff51b.png"
+                                                alt="">
+    
+                                        </a></div>
+                                    <div class="product-detail ">
+                                        <div class="box-pro-detail">
+                                            <div class="pro-name">
+                                                <a href="#" class="tp_product_name">
+                                                    Quần Jeans Pazzini Basic Slim BJ030
+                                                </a></div>
+                                            <div class="box-pro-prices">
+                                                <p class="pro-price tp_product_price highlight">
+                                                    530,000₫
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actionLoop visible-lg">
+                                    <a class="quickView notClick separated_product" href="#"><i
+                                            class="fa fa-shopping-cart"></i>
+                                        <p>Mua nhanh</p>
+    
+                                    </a>
+                                    <a class="styleBtnBuy" href="#"><i class="fa fa-eye"></i>
+                                        <p>Xem chi tiết</p>
+                                    </a></div>
+                            </div>
+                        </div>
+                        <div class="product-resize  col-lg-3 col-md-3 col-6 ">
+                            <div class="product__resize">
+                                <div class="product-block">
+                                    <div class="product-img ">
+                                        <a href="#" class="p-img-box">
+    
+                                            <img class="product_img" src="images/10e14d94-04e4-4611-a1de-b475851e7372.png"
+                                                alt="#">
+    
+                                        </a></div>
+                                    <div class="product-detail ">
+                                        <div class="box-pro-detail">
+                                            <div class="pro-name">
+                                                <a href="#" class="tp_product_name">
+                                                    Sơ mi dài tay họa tiết Torano TB133
+                                                </a></div>
+                                            <div class="box-pro-prices">
+                                                <p class="pro-price tp_product_price highlight">
+                                                    380,000₫
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actionLoop visible-lg">
+                                    <a class="quickView notClick separated_product" href="#"><i
+                                            class="fa fa-shopping-cart"></i>
+                                        <p>Mua nhanh</p>
+                                    </a>
+                                    <a class="styleBtnBuy" href="/quan-au-pazzini-l03-slim-fit-p12808746.html"><i
+                                            class="fa fa-eye"></i>
+                                        <p>Xem chi tiết</p>
+                                    </a></div>
+                            </div>
+                        </div>
+                        <div class="product-resize  col-lg-3 col-md-3 col-6 ">
+                            <div class="product__resize">
+                                <div class="product-block">
+                                    <div class="product-img ">
+                                        <a href="#" class="p-img-box added">
+    
+                                            <img class="product_img" src="images/d2a0a085-9888-428a-85bf-0916fe929293.png"
+                                                alt="">
+    
+                                        </a></div>
+                                    <div class="product-detail ">
+                                        <div class="box-pro-detail">
+                                            <div class="pro-name">
+                                                <a href="/ao-khoac-gio-co-mu-in-ngang-nguc-p24622902.html"
+                                                    class="tp_product_name">
+                                                    Áo Sơ mi dài tay trơn Pazzini TB053
+                                                </a></div>
+                                            <div class="box-pro-prices">
+                                                <p class="pro-price tp_product_price highlight">
+                                                    350,000₫
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actionLoop visible-lg">
+                                    <a class="quickView notClick separated_product" href="#"><i
+                                            class="fa fa-shopping-cart"></i>
+                                        <p>Mua nhanh</p>
+                                    </a>
+                                    <a class="styleBtnBuy" href="/ao-khoac-gio-co-mu-in-ngang-nguc-p24622902.html"><i
+                                            class="fa fa-eye"></i>
+                                        <p>Xem chi tiết</p>
+                                    </a></div>
+                            </div>
+                        </div>
+                        <div class="product-resize  col-lg-3 col-md-3 col-6 ">
+                            <div class="product__resize">
+                                <div class="product-block">
+                                    <div class="product-img ">
+                                        <a href="/quan-kaki-dai-basic-pazzini-kk27-p17412777.html" class="p-img-box">
+    
+                                            <img class="product_img" src="images/36e98570-dc50-41ee-8456-d4100d390906.png"
+                                                alt="">
+    
+                                        </a></div>
+                                    <div class="product-detail ">
+                                        <div class="box-pro-detail">
+                                            <div class="pro-name">
+                                                <a href="/quan-kaki-dai-basic-pazzini-kk27-p17412777.html"
+                                                    class="tp_product_name">
+                                                    Quần kaki basic Pazzini KK30
+                                                </a></div>
+                                            <div class="box-pro-prices">
+                                                <p class="pro-price tp_product_price highlight">
+                                                    400,000₫
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actionLoop visible-lg">
+                                    <a class="quickView notClick separated_product" href="#"><i
+                                            class="fa fa-shopping-cart"></i>
+                                        <p>Mua nhanh</p>
+                                    </a>
+                                    <a class="styleBtnBuy" href="/quan-kaki-dai-basic-pazzini-kk27-p17412777.html"><i
+                                            class="fa fa-eye"></i>
+                                        <p>Xem chi tiết</p>
+                                    </a></div>
+                            </div>
+                        </div>
+                        <div class="product-resize  col-lg-3 col-md-3 col-6 ">
+                            <div class="product__resize">
+                                <div class="product-block" data-anmation="1">
+                                    <div class="product-img ">
+                                        <a href="/ao-len-tron-co-tron-theu-logo-p24822803.html" class="p-img-box">
+                                            <img class="product_img" src="images/12f92546-b418-4b3e-b4d0-bc35dcdaec35.png"
+                                                alt="">
+                                        </a></div>
+                                    <div class="product-detail ">
+                                        <div class="box-pro-detail">
+                                            <div class="pro-name">
+                                                <a href="/ao-len-tron-co-tron-theu-logo-p24822803.html"
+                                                    class="tp_product_name">
+                                                    Áo phông dài tay melange cổ Pazzini LTF19-02 </a></div>
+                                            <div class="box-pro-prices">
+                                                <p class="pro-price tp_product_price highlight">
+                                                    190,000₫
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="actionLoop visible-lg">
+                                    <a class="quickView notClick separated_product" href="#"><i
+                                            class="fa fa-shopping-cart"></i>
+                                        <p>Mua nhanh</p>
+    
+                                    </a>
+                                    <a class="styleBtnBuy" href="/ao-len-tron-co-tron-theu-logo-p24822803.html"><i
+                                            class="fa fa-eye"></i>
+                                        <p>Xem chi tiết</p>
+    
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        <!-- End of Call to Action -->
+    
+        <!-- Course List -->
+        <div id="sectionHomeBannerProduct" class=" container">
+            <div class="Banner__Product row">
+                <div class="col-12 col-lg-6 col-md-6">
+                    <div class="innerLeftBannerProduct">
+                        <a href="#">
+                            <img class="lazyautosizes" src="images/332c1edb-0c4c-4110-b292-2e8f7f7944e2.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-6">
+                    <div class="innerRightBannerProduct">
+                        <div class="sectionTitleBannerProduct">
+                            <h2>
+                                <a href="" class="tp_title">SET ĐỒ CỦA TUẦN</a>
+                            </h2>
+                            <p class="tp_title_1">Lựa chọn của Stylist TORANO giúp bạn có một Outfit nam tính, đầy lịch lãm.
+                                Tham khảo ngay!</p>
+                        </div>
+                        <div class="row product-lists__home">
+                            <div class="product-resize  col-sm-6 col-lg-6 col-md-6 col-6 ">
+                                <div class="product-block">
+                                    <div class="product-img ">
+                                        <a href="" class="p-img-box added">
+                                            <img class="product_img" src="images/6e7bf822-6ee8-40b7-944f-0d9b7b65cc23.png">
+                                        </a>
+                                    </div>
+                                    <div class="product-detail ">
+                                        <div class="box-pro-detail">
+                                            <div class="pro-name">
+                                                <a href="#" class="tp_product_name">
+                                                    Áo len trơn cổ tròn thêu logo
+                                                </a>
+                                            </div>
+                                            <div class="box-pro-prices">
+                                                <p class="pro-price tp_product_price highlight">
+                                                    390,000₫
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-resize  col-sm-6 col-lg-6 col-md-6 col-6 ">
+                                <div class="product-block">
+                                    <div class="product-img ">
+                                        <a href="#" class="p-img-box">
+                                            <img class="product_img" src="images/320cd2df-4e28-45b1-8511-d38e46f51e07.png"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="product-detail ">
+                                        <div class="box-pro-detail">
+                                            <div class="pro-name">
+                                                <a href="#" class="tp_product_name">
+                                                    Quần âu Torano Slim fit cạp chần chun sau BT026
+                                                </a>
+                                            </div>
+                                            <div class="box-pro-prices">
+                                                <p class="pro-price tp_product_price highlight">
+                                                    450,000₫
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End of Page Content -->
+        </div>
+        <div id="" class=" section section-collection load-homeNews container ">
+            <div class="new-lists-home row">
+                <div class="sectionTitleTab">
+                            <h2>
+                                <a href="#" class="tp_title">
+                                    TIN TỨC
+                                </a></h2>
+                </div>
+                <div class="new-resize col-lg-3 col-md-3 col-12">
+                            <div class="new-img ">
+                                <a href="" class="p-img-box_new added">
+                                    <img class="new_img" src="images/article_1620369140_953.jpg">
+                                </a>
+                            </div>
+                            <div class="new-detail">
+                                <div class="box-pro-detail_new">
+                                    <div class="pro-name_new">
+                                        <a class="tp_new_name" href="#">
+                                            <p class="tp_new__name">
+                                                Tại sao áo POLO là vũ khí lợi hại của phái mạnh?</p>
+                                        </a>
+                                    </div>
+                                    <div class="detail_new">
+                                        <p class="detail__new">
+                                            Áo Polo chấp tất mọi thời tiết từ đông hay thu, xuân hay hè, đi chơi hay đi làm… đều rất phù hợp. Đó là nguyên nhân vì sao sức hút của áo Polo lại nóng đến vậy trong suốt thời gian dài không
+                                        </p>
+                                    </div>
+                                    <div class="see-more_new">
+                                        <a class="see-more__new" href="#">
+                                            <p class="see-more__new">
+                                                Xem thêm
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                <div class="new-resize col-lg-3 col-md-3 col-12">
+                    <div class="new-img ">
+                        <a href="" class="p-img-box_new added">
+                            <img class="new_img" src="images/article_1620370324_250.jpg">
+                        </a>
+                    </div>
+                    <div class="new-detail">
+                        <div class="box-pro-detail_new">
+                            <div class="pro-name_new">
+                                <a class="tp_new_name" href="#">
+                                    <p class="tp_new__name">
+                                        Bí quyết lựa chọn short kaki nam cho mùa hè</p>
+                                </a>
+                            </div>
+                            <div class="detail_new">
+                                <p class="detail__new">
+                                    Bạn đã có bao nhiêu chiếc quần short kaki trong tủ quần áo của mình? Hãy cùng TORANO cập nhật những
+                                    kiểu dáng để hoàn thiện bộ sưu tập hè của bạn nhé.
+                                </p>
+                            </div>
+                            <div class="see-more_new">
+                                <a class="see-more__new" href="#">
+                                    <p class="see-more__new">
+                                        Xem thêm
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-resize col-lg-3 col-md-3 col-12">
+                    <div class="new-img ">
+                        <a href="" class="p-img-box_new added">
+                            <img class="new_img" src="images/article_1620369891_212.jpg">
+                        </a>
+                    </div>
+                    <div class="new-detail">
+                        <div class="box-pro-detail_new">
+                            <div class="pro-name_new">
+                                <a class="tp_new_name" href="#">
+                                    <p class="tp_new__name">
+                                        Hướng dẫn chọn size quần áo cho nam giới</p>
+                                </a>
+                            </div>
+                            <div class="detail_new">
+                                <p class="detail__new">
+                                    Trang phục sẽ tôn lên vóc dáng con người, vì vậy, quan trọng hơn cả là bạn phải chọn được trang phục phù hợp với form người mình
+
+                                </p>
+                            </div>
+                            <div class="see-more_new">
+                                <a class="see-more__new" href="#">
+                                    <p class="see-more__new">
+                                        Xem thêm
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-resize col-lg-3 col-md-3 col-12">
+                    <div class="new-img ">
+                        <a href="" class="p-img-box_new added">
+                            <img class="new_img" src="images/article_1620370982_630.jpg">
+                        </a>
+                    </div>
+                    <div class="new-detail">
+                        <div class="box-pro-detail_new">
+                            <div class="pro-name_new">
+                                <a class="tp_new_name" href="#">
+                                    <p class="tp_new__name">
+                                        Đôi điều về Quần Kaki (Chinos)</p>
+                                </a>
+                            </div>
+                            <div class="detail_new">
+                                <p class="detail__new">
+                                    Nếu như quần jeans thường hợp hơn với giới trẻ, quần vải âu phù hợp với không gian  nghiêm túc, chốn công sở thì quần kaki lại là chiếc quần đa năng nhất.
+                                </p>
+                            </div>
+                            <div class="see-more_new">
+                                <a class="see-more__new" href="#">
+                                    <p class="see-more__new">
+                                        Xem thêm
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <!-- Start Banner Bottum -->
+        <div id="sectionHomeStore" class="s">
+            <div class="innerHomeStore">
+                <div class="contentHomeStore">
+                    <div class="textStore"><a href="" target="_self">HỆ THỐNG CỬA HÀNG</a></div>
+                    <div class="imgStore">
+                        <img class="lazyautosizes lazyloaded" data-sizes="auto"
+                            src="images/sb_1620371332_223.jpg"
+                            data-src=""
+                            alt="bn_foot" sizes="1007px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Banner Bottum  -->
+        <div id="sectionInfoFooter" class="">
+        <div class="wrapper-new container ">
+            <div class="innerInfoFooter row ">
+                <div class="col-lg-3 col-md-3 col-12">
+                    <h4>
+                        GỌI MUA HÀNG ( 08:30-21:30 )
+                    </h4>
+                    <div class="infoContent">
+                        <p class="info_block">
+                            <span class="iconFooter ">
+                                <i class="fa fa-phone fa-phone_footer ">
+                                </i>
+                            </span>
+                            <span class="titleHotline">
+                                <a class="btnHL" href="#">
+                                    0964942121
+                                </a>
+                            </span>
+                            <span class="moreInfoFooter">
+                                <p class="moreInfo_Footer">Tất cả các ngày trong tuần</p>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-12">
+                    <h4>
+                        GÓP Ý, KHIẾU NẠI (08:30-20:30 )
+                    </h4>
+                    <div class="infoContent">
+                        <p class="info_block">
+                            <span class="iconFooter"><i class="fa fa-phone fa-phone_footer "></i></span>
+                            <span class="titleHotline"><a class="btnHL" href="#">
+                                    0931733469
+                                </a></span>
+                            <span class="moreInfoFooter">
+                                <p class="moreInfo_Footer">Các ngày trong tuần( trừ ngày lễ )</p>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-12">
+                    <h4>
+                        ĐĂNG KÝ NHẬN THÔNG TIN MỚI
+                    </h4>
+                    <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletter-form">
+                        <div class="signupemail">
+                            <input type="text" class="inputemail" placeholder="Nhập email của bạn tại đây...">
+                            <button type="button" name="subscribe" id="mc-embedded-subscribe" class="btn-newsletter">
+                                <span>Đăng ký</span>
+                                </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-3 col-12">
+                    <h4>
+                        THEO DÕI CHÚNG TÔI
+                    </h4>
+                    <ul class="navbar-social">
+                        <li class="social">
+                            <a href="#">
+                                <i class="fab fa-facebook-f "></i>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Footer -->
+        <footer id="footerBottom" class="">
+        <div class="wrapper_new container">
+            <div class="innerInfoFooter row">
+                <div class="col-12 col-lg-3 col-md-3 footer-div footer-active">
+                    <h4 class="footer-title">CÔNG TY CỔ PHẦN ĐẦU TƯ T&amp;L VIỆT NAM</h4>
+                    <div class="footer-content">
+                        <p>Mã số thuế:0108597977</p>
+                        <p>Địa chỉ: Phòng 803-812, Tầng 8,Tòa nhà 315 Trường Chinh, Phường Khương Mai, Quận Thanh Xuân,
+                            Thành phố Hà Nội.</p>
+                        <p><img alt="" src="images/bocongthuong.png">
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-3 footer-div">
+                    <h4 class="footer-title">VỀ CHÚNG TÔI</h4>
+                    <div class="footer-content">
+                        <ul>
+                            <li><a href="">Giới thiệu</a></li>
+                            <li><a href="/lien-he">Liên hệ</a></li>
+                            <li><a href="#" target="_blank" rel="noreferrer noopener">Tuyển dụng</a>
+                            </li>
+                            <li><a href="">Tìm đại lý</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-3 footer-div">
+                    <h4 class="footer-title">HỖ TRỢ KHÁCH HÀNG</h4>
+                    <div class="footer-content">
+                        <ul>
+                            <li><a href="">Hướng dẫn chọn size</a></li>
+                            <li><a href="">Chính sách khách hàng thân thiết</a></li>
+                            <li><a href="">Chính sách đổi/Trả</a></li>
+                            <li><a href="">Chính sách bảo mật</a></li>
+                            <li><a href="">Thanh toán, Giao nhận</a></li>
+                            <li><a href="">Câu hỏi thường gặp</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-3 footer-div">
+                    <h4 class="footer-title">FANPAGE CHÚNG TÔI</h4>
+                    <div class="footer-content">
+                        <div class="fb-page" data-href="https://www.facebook.com/Torano.vn/" data-tabs="timeline"
+                            data-width="300" data-height="210px" data-small-header="false"
+                            data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/Torano.vn/" class="fb-xfbml-parse-ignore"><a
+                                    href="https://www.facebook.com/Torano.vn/">Torano</a></blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+        <div class="bottombar"></div>
+    <!-- End of Footer -->
+
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            </script>
+      </body>
+    </html>
